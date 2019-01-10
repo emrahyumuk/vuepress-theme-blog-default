@@ -35,7 +35,7 @@
       v-if="data.footer">
       {{ data.footer }}
     </div>
-    </div>
+  </main>
 </template>
 
 <script>
