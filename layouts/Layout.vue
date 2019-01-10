@@ -3,13 +3,11 @@
     :class="pageClasses"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
-
     <Navbar v-if="shouldShowNavbar"
       @toggle-sidebar="toggleSidebar" />
 
     <div class="sidebar-mask"
-      @click="toggleSidebar(false)">
-    </div>
+      @click="toggleSidebar(false)"></div>
 
     <Sidebar :items="sidebarItems"
       @toggle-sidebar="toggleSidebar">
@@ -28,11 +26,12 @@
       <slot name="page-bottom"
         slot="bottom" />
     </Page>
-
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+import nprogress from "nprogress";
 import Home from "../components/Home.vue";
 import Navbar from "../components/Navbar.vue";
 import Page from "../components/Page.vue";
@@ -41,11 +40,13 @@ import { resolveSidebarItems } from "../util";
 
 export default {
   components: { Home, Page, Sidebar, Navbar },
+
   data() {
     return {
       isSidebarOpen: false
     };
   },
+
   computed: {
     shouldShowNavbar() {
       const { themeConfig } = this.$site;
@@ -92,8 +93,20 @@ export default {
       ];
     }
   },
+
   mounted() {
+    // configure progress bar
+    nprogress.configure({ showSpinner: false });
+
+    this.$router.beforeEach((to, from, next) => {
+      if (to.path !== from.path && !Vue.component(to.name)) {
+        nprogress.start();
+      }
+      next();
+    });
+
     this.$router.afterEach(() => {
+      nprogress.done();
       this.isSidebarOpen = false;
     });
   },
@@ -126,7 +139,5 @@ export default {
 };
 </script>
 
-
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="../styles/theme.styl" lang="stylus"></style>
-

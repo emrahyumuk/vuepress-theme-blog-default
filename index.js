@@ -1,14 +1,14 @@
 const path = require('path');
 
-// Theme API
+// Theme API.
 module.exports = (options, ctx) => ({
   alias() {
     const { themeConfig, siteConfig } = ctx;
-    //resolve algolia
+    // resolve algolia
     const isAlgoliaSearch =
       themeConfig.algolia ||
       Object.keys((siteConfig.locales && themeConfig.locales) || {}).some(
-        base => themeConfig[base].algolia
+        base => themeConfig.locales[base].algolia
       );
     return {
       '@AlgoliaSearchBox': isAlgoliaSearch
@@ -17,5 +17,5 @@ module.exports = (options, ctx) => ({
     };
   },
 
-  plugins: ['@vuepress/active-header-links', '@vuepress/search', '@vuepress/plugin-nprogress'],
+  plugins: ['@vuepress/active-header-links', '@vuepress/search'],
 });

@@ -1,5 +1,5 @@
 <template>
-  <section class="sidebar-group"
+  <div class="sidebar-group"
     :class="{ first, collapsable }">
     <p class="sidebar-heading"
       :class="{ open }"
@@ -20,7 +20,7 @@
         </li>
       </ul>
     </DropdownTransition>
-  </section>
+  </div>
 </template>
 
 <script>
