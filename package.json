@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-blog-default",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "vuepress 1.x default blog theme",
   "main": "index.js",
   "publishConfig": {
@@ -25,8 +25,8 @@
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.0.0-alpha.30",
     "@vuepress/plugin-search": "^1.0.0-alpha.30",
-    "vuepress-plugin-nprogress": "^0.1.0",
     "docsearch.js": "^2.5.2",
+    "nprogress": "^0.2.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
