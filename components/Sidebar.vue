@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <aside class="sidebar">
     <NavLinks />
     <slot name="top" />
     <ul class="sidebar-links"
@@ -17,7 +17,7 @@
       </li>
     </ul>
     <slot name="bottom" />
-  </div>
+  </aside>
 </template>
 
 <script>

@@ -180,4 +180,3 @@ export default {
       white-space nowrap
       margin 0
 </style>
-

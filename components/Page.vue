@@ -1,10 +1,10 @@
 <template>
-  <div class="page">
+  <main class="page">
     <slot name="top" />
 
     <Content />
 
-    <div class="page-edit">
+    <footer class="page-edit">
       <div class="edit-link"
         v-if="editLink">
         <a :href="editLink"
@@ -18,7 +18,7 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
-    </div>
+    </footer>
 
     <div class="page-nav"
       v-if="prev || next">
@@ -45,7 +45,7 @@
     </div>
 
     <slot name="bottom" />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -182,6 +182,7 @@ function find(page, items, offset) {
 
 .page
   padding-bottom 2rem
+  display block
 
 .page-edit
   @extend $wrapper
