@@ -85,7 +85,7 @@ module.exports = (options, ctx) => {
         if (key) {
           if (!map[key]) {
             map[key] = {};
-            map[key].path = `/${scope}/${key}.html`;
+            map[key].path = `/${scope}/${key}/index.html`;
             map[key].pageKeys = [];
           }
           map[key].pageKeys.push(pageKey);
