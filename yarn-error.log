@@ -1,0 +1,68 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add -D @vuepress/blog
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@vuepress%2fblog: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:65894:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:129018:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:129990:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:129912:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "vuepress-theme-blog-default",
+    "version": "0.3.1",
+    "description": "vuepress 1.x default blog theme",
+    "main": "index.js",
+    "publishConfig": {
+      "access": "public"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/emrahyumuk/vuepress-theme-blog-default.git"
+    },
+    "keywords": [
+      "blog",
+      "vue",
+      "vuepress",
+      "generator"
+    ],
+    "author": "Emrah Yumuk",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/emrahyumuk/vuepress-theme-blog-default/issues"
+    },
+    "homepage": "https://github.com/emrahyumuk/vuepress-theme-blog-default/#readme",
+    "dependencies": {
+      "@vuepress/plugin-active-header-links": "^1.0.0-alpha.31",
+      "@vuepress/plugin-nprogress": "^1.0.0-alpha.31",
+      "@vuepress/plugin-search": "^1.0.0-alpha.31",
+      "docsearch.js": "^2.5.2",
+      "stylus": "^0.54.5",
+      "stylus-loader": "^3.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

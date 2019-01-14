@@ -17,5 +17,19 @@ module.exports = (options, ctx) => ({
     };
   },
 
-  plugins: ['@vuepress/active-header-links', '@vuepress/search', '@vuepress/plugin-nprogress'],
+  plugins: [
+    '@vuepress/active-header-links',
+    '@vuepress/plugin-nprogress',
+    '@vuepress/blog',
+    '@vuepress/pagination',
+    '@vuepress/medium-zoom',
+    '@vuepress/back-to-top',
+    [
+      '@vuepress/search',
+      {
+        searchMaxSuggestions: 10,
+        test: null,
+      },
+    ],
+  ],
 });
