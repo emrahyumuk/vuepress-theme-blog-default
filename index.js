@@ -18,9 +18,9 @@ module.exports = (options, ctx) => ({
   },
 
   plugins: [
+    path.resolve(__dirname, 'plugins/blog/index.js'),
     '@vuepress/active-header-links',
     '@vuepress/plugin-nprogress',
-    '@vuepress/blog',
     '@vuepress/pagination',
     '@vuepress/medium-zoom',
     '@vuepress/back-to-top',

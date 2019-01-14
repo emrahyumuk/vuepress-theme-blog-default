@@ -17,8 +17,7 @@
         slot="bottom" />
     </Sidebar>
 
-    <Page v-else
-      :sidebar-items="sidebarItems">
+    <Page :sidebar-items="sidebarItems">
       <slot name="page-top"
         slot="top" />
       <slot name="page-bottom"
