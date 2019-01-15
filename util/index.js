@@ -139,6 +139,54 @@ export function resolveSidebarItems(page, regularPath, site, localePath) {
   }
 }
 
+export function resolveBlogSidebarItems(page, regularPath, site, localePath) {
+  const { pages, themeConfig } = site;
+
+  const localeConfig =
+    localePath && themeConfig.locales
+      ? themeConfig.locales[localePath] || themeConfig
+      : themeConfig;
+
+  // let categorySidebarGroups =
+  //   page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar;
+
+  // if (categorySidebarGroups == null) {
+  //   categorySidebarGroups = [];
+  // }
+
+  let categorySidebarGroups = [];
+
+  for (const postPage of pages) {
+    if (!postPage.path.startsWith('/blog/') || postPage.frontmatter.blog_index) continue;
+    if (postPage.frontmatter.categories == null || postPage.frontmatter.categories.length < 1) {
+      postPage.frontmatter.categories = ['other'];
+    }
+
+    for (const postCategory of postPage.frontmatter.categories) {
+      const postCategorySidebarGroup = categorySidebarGroups.filter(
+        x => x.title.toLowerCase() == postCategory
+      );
+      if (postCategorySidebarGroup.length < 1) {
+        categorySidebarGroups.push({
+          title: postCategory,
+          collapsable: false,
+          children: [postPage.path],
+        });
+      } else {
+        postCategorySidebarGroup[0].children.push(postPage.path);
+      }
+    }
+  }
+
+  const normalizedPagesMap = pages.reduce((map, page) => {
+    map[normalize(page.path)] = page;
+    return map;
+  }, {});
+
+  const { base, config } = resolveMatchingConfig(regularPath, categorySidebarGroups);
+  return config ? config.map(item => resolveItem(item, normalizedPagesMap, base)) : [];
+}
+
 /**
  * @param { Page } page
  * @returns { SidebarGroup }

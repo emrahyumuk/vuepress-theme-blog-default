@@ -31,7 +31,7 @@ import Home from "../components/Home.vue";
 import Navbar from "../components/Navbar.vue";
 import Page from "../components/Page.vue";
 import Sidebar from "../components/Sidebar.vue";
-import { resolveSidebarItems } from "../util";
+import { resolveBlogSidebarItems } from "../util";
 
 export default {
   components: { Home, Page, Sidebar, Navbar },
@@ -68,7 +68,7 @@ export default {
     },
 
     sidebarItems() {
-      return resolveSidebarItems(
+      return resolveBlogSidebarItems(
         this.$page,
         this.$page.regularPath,
         this.$site,
