@@ -7,10 +7,10 @@ module.exports = (options, ctx) => {
   const { layoutComponentMap } = ctx;
   const {
     pageEnhancers = [],
-    postsDir = '_posts',
-    categoryIndexPageUrl = '/category/',
-    tagIndexPageUrl = '/tag/',
-    permalink = '/:year/:month/:day/:slug',
+    postsDir = options.permalink || '_posts',
+    categoryIndexPageUrl = options.categoryIndexPageUrl || '/category/',
+    tagIndexPageUrl = options.tagIndexPageUrl || '/tag/',
+    permalink = options.permalink || '/:year/:month/:day/:slug',
   } = options;
 
   const isLayoutExists = name => layoutComponentMap[name] !== undefined;

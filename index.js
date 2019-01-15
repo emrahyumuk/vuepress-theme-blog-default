@@ -16,7 +16,7 @@ module.exports = (options, ctx) => ({
         : path.resolve(__dirname, 'noopModule.js'),
     };
   },
-
+  permalink: '/blog/:slug',
   plugins: [
     path.resolve(__dirname, 'plugins/blog/index.js'),
     '@vuepress/active-header-links',

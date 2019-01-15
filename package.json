@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-blog-default",
-  "version": "0.5.2",
+  "version": "0.5.4",
   "description": "vuepress 1.x default blog theme",
   "main": "index.js",
   "publishConfig": {
