@@ -17,8 +17,7 @@
         slot="bottom" />
     </Sidebar>
 
-    <Posts :sidebar-items="sidebarItems"
-      :tag="tag">
+    <Posts :sidebar-items="sidebarItems">
       <slot name="page-top"
         slot="top" />
       <slot name="page-bottom"
@@ -76,9 +75,7 @@ export default {
         this.$localePath
       );
     },
-    tag() {
-      return this.$page.path.split("/tag/")[1].remove("/index.html");
-    },
+
     pageClasses() {
       const userPageClass = this.$page.frontmatter.pageClass;
       return [

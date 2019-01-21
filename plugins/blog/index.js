@@ -11,6 +11,7 @@ module.exports = (options, ctx) => {
     categoryIndexPageUrl = '/category/',
     tagIndexPageUrl = '/tag/',
     permalink = '/blog/:slug', //'/:year/:month/:day/:slug',
+    blogIndexPageUrl = '/blog/',
   } = options;
 
   const isLayoutExists = name => layoutComponentMap[name] !== undefined;
@@ -37,6 +38,10 @@ module.exports = (options, ctx) => {
     {
       when: ({ regularPath }) => regularPath === '/',
       frontmatter: { layout: getLayout('Layout') },
+    },
+    {
+      when: ({ regularPath }) => regularPath === blogIndexPageUrl,
+      frontmatter: { layout: getLayout('Blog', 'Page') },
     },
     {
       when: ({ regularPath }) => regularPath.startsWith(`/${postsDir}/`),
@@ -95,7 +100,7 @@ module.exports = (options, ctx) => {
       const handleTag = curryHandler('tag', tagMap);
       const handleCategory = curryHandler('category', categoryMap);
 
-      pages.forEach(({ key, frontmatter: { tag, tags, category, categories } }) => {
+      pages.forEach(({ key, frontmatter: { tag, tags, category, categories, blog } }) => {
         if (isString(tag)) {
           handleTag(tag, key);
         }
@@ -121,6 +126,10 @@ module.exports = (options, ctx) => {
         {
           permalink: categoryIndexPageUrl,
           frontmatter: { title: `Categories` },
+        },
+        {
+          permalink: blogIndexPageUrl,
+          frontmatter: { title: `Blog` },
         },
         ...Object.keys(tagMap).map(tagName => ({
           permalink: tagMap[tagName].path,
