@@ -2,41 +2,48 @@
 # yarn lockfile v1
 
 
-"@vuepress/plugin-active-header-links@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.31.tgz#ff1bab58540bed7e1b01d061e92b3a15c0240600"
-  integrity sha512-gDcZH1CY/NV2Enkt59Tcq+znUCyPUgCrOmUBg+wnO7hZlao3JrK5Lmjg4UIQVsNmru+1jyy1yLxqmoD9CgU4jA==
+"@vuepress/plugin-active-header-links@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.32.tgz#48634cbd7b71d5b95aa21ce211651977320a705e"
+  integrity sha512-YQrl1+EaYAp+fzK+qMrLU4duAIps+Mp7Xen79M1q51tL+yVtVml3ASy2ml0uPuHRsxn0IQQ3cmXFh3imGnlvxQ==
   dependencies:
     lodash.throttle "^4.1.1"
 
-"@vuepress/plugin-blog@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.0.0-alpha.31.tgz#211e1e5ffd06e013bda09cf1346a562cf1d94c4c"
-  integrity sha512-F+RxnDeRkBUL7Bp+cBR1Fczn4M0blSg9zWD+f7C/LCQ7gnpla8jNN9Il7J9skd6ag1wwp39knQSizriqQCcc4g==
+"@vuepress/plugin-back-to-top@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.32.tgz#c319d7165d0e1dfde46d559e176437e548c98a50"
+  integrity sha512-//Ob0+3PKRAY6ym/zzqzyFReDtRlkn6PBexvpjGVsHIAzlZ+cIdy1fYaGlmvQbxH+djRby/8+PFEBN5YfLwbPw==
+  dependencies:
+    lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-medium-zoom@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.31.tgz#0e3d0b291da101615a9cd442bab39e42cfdc9bde"
-  integrity sha512-0G47zZZwLOJYdTg5LaIJ0LbdJmmN2cWVFwLFh1467q7lpouXS+vFSvojFqFacpWqBAZX88dYL2xpWb/Z/2QPkQ==
+"@vuepress/plugin-blog@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.0.0-alpha.32.tgz#e9cdd43c3253d804f23549d11d9f0ccd9bacec91"
+  integrity sha512-GQDapngpxTEBeCgC58Viva6DuH0BhbgCLa62chPZtX1y144qYtQD3vDyuN33efRO4reeHPFHGYvX0L8lL9MvKQ==
+
+"@vuepress/plugin-medium-zoom@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.32.tgz#ecf30a27a631f83134467de0512ab0b9efaf8ae6"
+  integrity sha512-BJCTjCrEtvscqEHi4GhX2x8VuzNX2ucd7he1gaUMJF70+Ul/yQM0H6cKDO3GgsHj1skb6IhmwCR185FWDPNwSA==
   dependencies:
     medium-zoom "^0.4.0"
 
-"@vuepress/plugin-nprogress@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.0.0-alpha.31.tgz#f250bf20cf613a2b5cc3c0716b7e2d13465d9402"
-  integrity sha512-Wr7eCtiG8MctloFc0YnPhnV0rw5N95+bMyGpr1cldS9wGjpA1ROb7iW9KcmZuSc24H6f2XD7nwd+y2WM3Kk+CQ==
+"@vuepress/plugin-nprogress@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.0.0-alpha.32.tgz#b3dd3ba47278095f4056c4fd44865051f3dc9047"
+  integrity sha512-XXIuKUTYt+bP3EjP9VdFOJgRv4EidW/qV1uPGVPNW6pC3OC7KJ9i4T5Ts0sz7iflR6JFxygNNYsed7uHOUmH1Q==
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pagination@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pagination/-/plugin-pagination-1.0.0-alpha.31.tgz#b215829a4a5cce44277283350dfc83e5d5156676"
-  integrity sha512-stxzpnSvqgmBTv6TqFJwIq/caEqmmftKtTRH6YAn4r/8O4jttLrbY1KUUYm+G9NHYurOAZvNaeZ//i+pMH1jsA==
+"@vuepress/plugin-pagination@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pagination/-/plugin-pagination-1.0.0-alpha.32.tgz#89f63ffc8609c3ba7735852c944ee9758e73956c"
+  integrity sha512-XrHH+z7vwEXRLMNQWxnS/sPgMUs2Y03KnHfB2PD62oB2I/6CpTDOhz48mz4BLzxg8d3nSAmlaDSwS7D7umdoRg==
 
-"@vuepress/plugin-search@^1.0.0-alpha.31":
-  version "1.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.0-alpha.31.tgz#9ea5f0a31597344c44be809c9db9b51399077142"
-  integrity sha512-92nfWxp8mfrh8bynFzb18PqP2nRDipjmzMiVUqNjrt4JHNcQkUtaunwhIZouU0bEOvVRbsVNPWE49CFwzH+Zow==
+"@vuepress/plugin-search@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.0-alpha.32.tgz#e1ceca0c38dda43857d8288b3b2ec37dc83db745"
+  integrity sha512-54S7FFa8+mvpERPczgjswp17/Rpl79gqptnv3Fu+w8GS5mOjgH1obSRzVZ1GEtZiSuEAJ29eLGRMaALmsxsDPw==
 
 abbrev@1:
   version "1.1.1"
@@ -196,7 +203,7 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-docsearch.js@^2.5.2:
+docsearch.js@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/docsearch.js/-/docsearch.js-2.6.2.tgz#cb36a97aeac8a8d31eed5915cdee808a2248b41c"
   integrity sha512-qyQ+raZlHSkfdpFg8wJNhjiz9WsjdQkRGe2LiiKS6vIIsouNNole2Kg/9UvGoUIK9PLLl31uL3I4YDwnrXt5yQ==
@@ -444,6 +451,11 @@ lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.throttle@^4.1.1:
   version "4.1.1"
