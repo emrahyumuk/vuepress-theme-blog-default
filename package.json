@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-blog-default",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "vuepress 1.x default blog theme",
   "main": "index.js",
   "publishConfig": {
@@ -23,15 +23,15 @@
   },
   "homepage": "https://github.com/emrahyumuk/vuepress-theme-blog-default/#readme",
   "dependencies": {
-    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.32",
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.32",
-    "@vuepress/plugin-blog": "^1.0.0-alpha.32",
-    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.32",
-    "@vuepress/plugin-nprogress": "^1.0.0-alpha.32",
-    "@vuepress/plugin-pagination": "^1.0.0-alpha.32",
-    "@vuepress/plugin-search": "^1.0.0-alpha.32",
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.35",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.35",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.35",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.35",
+    "@vuepress/plugin-pagination": "^1.0.0-alpha.35",
+    "@vuepress/plugin-search": "^1.0.0-alpha.35",
     "docsearch.js": "^2.6.2",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vuepress": "^1.0.0-alpha.35"
   }
 }
